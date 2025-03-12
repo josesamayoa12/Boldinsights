@@ -5,41 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bold Insights</title>
     <style>
+        /* Estilos Generales */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f7f7f7;
             color: #333;
         }
+
         header {
-            background-color: #0073e6;
+            background-color: #1a1a1a; /* Color oscuro similar a loyal.guru */
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 40px 0;
         }
+
         header h1 {
+            font-size: 3em;
             margin: 0;
+            font-weight: bold;
         }
-        .main-content {
-            padding: 20px;
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .section {
+            padding: 50px 20px;
             text-align: center;
         }
-        .section {
-            margin-top: 40px;
+
+        .section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0073e6; /* Azul para darle un toque visual */
         }
+
+        .section p {
+            font-size: 1.1em;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Dashboard Section */
+        .dashboard iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .automations {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            margin-top: 30px;
+        }
+
+        .automations h3 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .automations ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .automations li {
+            font-size: 1.1em;
+            padding: 10px;
+            background-color: #fff;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
-            background-color: #333;
+            background-color: #1a1a1a;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 15px 0;
+            font-size: 1em;
         }
-        h2 {
-            color: #0073e6;
-        }
+
     </style>
 </head>
 <body>
@@ -49,33 +105,51 @@
         <p>Transformando datos en decisiones inteligentes</p>
     </header>
 
-    <div class="main-content">
-        <h2>Qué Hacemos</h2>
-        <p>En **The Bold Insights**, ofrecemos soluciones avanzadas de análisis de datos, visualización y automatización para ayudar a las empresas a tomar decisiones informadas y efectivas.</p>
-        
-        <div class="section">
-            <h2>Ejemplos de Automatización</h2>
-            <p>Gracias a nuestras soluciones de automatización, optimizamos procesos en diversas áreas, como marketing, ventas, y gestión de datos. Imagina tener un sistema que se encarga de organizar los datos por ti y los presenta de manera visual en tiempo real.</p>
+    <!-- Sección de qué hacemos -->
+    <div class="section">
+        <div class="container">
+            <h2>Qué Hacemos</h2>
+            <p>En **The Bold Insights**, ofrecemos soluciones avanzadas de análisis de datos, visualización y automatización para ayudar a las empresas a tomar decisiones informadas y estratégicas.</p>
         </div>
+    </div>
 
-        <div class="section">
-            <h2>Dashboards Interactivos en Power BI</h2>
-            <p>Utilizamos herramientas como Power BI para crear dashboards visuales que permiten monitorear el desempeño de tu empresa de manera eficiente, con información accesible en cualquier momento y lugar.</p>
+    <!-- Ejemplos de Dashboards de Power BI -->
+    <div class="section dashboard">
+        <div class="container">
+            <h2>Ejemplos de Dashboards en Power BI</h2>
+            <p>Aquí mostramos ejemplos de dashboards interactivos creados con Power BI. Estos paneles proporcionan información valiosa de manera visual y dinámica para facilitar la toma de decisiones.</p>
+
+            <!-- Ejemplo de Dashboard en Power BI -->
+            <iframe src="https://app.powerbi.com/reportEmbed?reportId=tu-report-id&groupId=tu-group-id" frameborder="0" allowFullScreen="true"></iframe>
+
+            <p>Este es solo un ejemplo de cómo los dashboards pueden proporcionar una vista detallada y en tiempo real del rendimiento de tu negocio.</p>
         </div>
-        
-        <div class="section">
-            <h2>Beneficios</h2>
+    </div>
+
+    <!-- Sección de Automatización -->
+    <div class="section automations">
+        <div class="container">
+            <h3>¿Qué es la Automatización?</h3>
+            <p>La automatización en el contexto de datos y procesos empresariales se refiere al uso de tecnología para realizar tareas repetitivas sin intervención humana. Esto no solo ahorra tiempo, sino que mejora la eficiencia y la precisión de las operaciones.</p>
+
+            <h3>¿Qué Hacemos en Automatización?</h3>
+            <p>En **The Bold Insights**, ayudamos a las empresas a automatizar sus procesos clave utilizando herramientas avanzadas de análisis y software de automatización. Desde la gestión de inventarios hasta la generación automática de reportes, nuestra misión es hacer más eficientes las operaciones de nuestros clientes.</p>
+
+            <h3>Ejemplo de Automatización: Generación de Reportes Automáticos</h3>
             <ul>
-                <li><strong>Optimización de tiempo:</strong> Automatiza tareas repetitivas.</li>
-                <li><strong>Toma de decisiones:</strong> Datos claros para decisiones más inteligentes.</li>
-                <li><strong>Visualización en tiempo real:</strong> Monitorea KPIs clave con facilidad.</li>
+                <li><strong>Escenario:</strong> Supón que tienes que generar un reporte de ventas semanal. Si este proceso se realiza manualmente, puede llevar horas.</li>
+                <li><strong>Solución:</strong> Creamos un sistema de automatización que conecta tus bases de datos con herramientas como Power BI o Google Sheets. Esto permite que los datos se actualicen automáticamente y los reportes se generen en tiempo real.</li>
+                <li><strong>Beneficio:</strong> Ahorras tiempo, reduces errores humanos y tienes reportes siempre actualizados, listos para la toma de decisiones.</li>
             </ul>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 The Bold Insights | Todos los derechos reservados</p>
     </footer>
 
 </body>
 </html>
+
+
